@@ -8,6 +8,8 @@ Royale Moto is an app which consists collection of the best motorcycles. User wi
 
 ## API and Data Sample
 
+(https://airtable.com/tblHhxL6KnP5ie5PC/viwqjI8MIMAF39TKd?blocks=hide)
+```json
 {
     "records": [
         {
@@ -55,6 +57,8 @@ Royale Moto is an app which consists collection of the best motorcycles. User wi
     ],
     "offset": "recLFkBBIytWg2xLc"
 }
+```
+
 
 ## Wireframes
 
