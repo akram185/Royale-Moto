@@ -99,7 +99,7 @@ https://wireframe.cc/jxRTUt
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+https://github.com/akram185/Royale-Moto/blob/master/React_Priority_Matrix.png
 
 ## Timeframes
 
