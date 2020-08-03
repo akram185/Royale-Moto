@@ -4,7 +4,7 @@ Royale Moto
 
 ## Project Description
 
-Royale Moto is an app which consists collection of the best motorcycles. User will be presented with cards containing image and the name of the motorcycles Royale Moto has. User can select the motorcycle they like and will be redirected to the individual motorcycle page when clicked on the card. Each individual motorcycle page will have information about the selected motorcycle and specifications. There will also be a "Add to favorites" button on each page which will let the user add their favorite motorcycle to the favorites list. The cool feature of this app is that the user is not limited to the collection Royale Moto has, user can add motorcycles of their choice from additional dropdown list which includes more motorcycles not included in Royale Moto's collection.
+Royale Moto is an app which consists collection of the best motorcycles. User will be presented with cards containing image and the name of the motorcycles Royale Moto has. User can select the motorcycle they like and will be redirected to the individual motorcycle page when clicked on the card. Each individual motorcycle page will have information about the selected motorcycle and features. There will also be a "Add to favorites" button on each page which will let the user add their favorite motorcycle to the favorites list. The cool feature of this app is that the user is not limited to the collection Royale Moto has, user can add motorcycles of their choice from additional dropdown list which includes more motorcycles not included in Royale Moto's collection.
 
 ## Data Sample
 
@@ -90,8 +90,8 @@ https://wireframe.cc/jxRTUt
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|August 01-02| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|August 03| Project Approval | Incomplete
+|August 01-02| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|August 03| Project Approval | Complete
 |August 04| Core Application Structure (6 react components) | Incomplete
 |August 05| Consume the data and render it on components| Incomplete
 |August 06| MVP and Post MVP  | Incomplete
