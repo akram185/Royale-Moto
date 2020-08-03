@@ -84,19 +84,14 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|August 01-02| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|August 03| Project Approval | Incomplete
+|August 04| Core Application Structure (6 react components) | Incomplete
+|August 05| Consume the data and render it on components| Incomplete
+|August 06| MVP and Post MVP  | Incomplete
+|August 07| Presentations | Incomplete
 
 ## Priority Matrix
 
