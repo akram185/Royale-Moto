@@ -6,7 +6,7 @@ Royale Moto
 
 Royale Moto is an app which consists collection of the best motorcycles. User will be presented with cards containing image and the name of the motorcycles Royale Moto has. User can select the motorcycle they like and will be redirected to the individual motorcycle page when clicked on the card. Each individual motorcycle page will have information about the selected motorcycle and specifications. There will also be a "Add to favorites" button on each page which will let the user add their favorite motorcycle to the favorites list. The cool feature of this app is that the user is not limited to the collection Royale Moto has, user can add motorcycles of their choice from additional dropdown list which includes more motorcycles not included in Royale Moto's collection.
 
-## API and Data Sample
+## Data Sample
 
 (https://airtable.com/tblHhxL6KnP5ie5PC/viwqjI8MIMAF39TKd?blocks=hide)
 ```json
@@ -66,20 +66,21 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Consume data from Airtable and render it on the Home page
+- Allow user to add selected motorcyle to the favorites
+- Make individual page for each motorcycle
+- Include optios for user to add motorcycle to the Home page
+- Have Home, Favorites, Motorcycle, App, Add Motorcycles, Delete Favorites components
+- Page responsive design will support mobile, desktop and tablet layouts
+- Use flexbox to display rendered data
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Use bootstarp for styling
+- Add animations and dark mode
+- Create one more component to delete the motorcycles from Home page.
 
 ## Project Schedule
 
