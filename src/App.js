@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import axios from "axios"
+import Motorcycle from "./Motorcycle"
 
 
 class App extends Component {
@@ -24,7 +25,7 @@ class App extends Component {
           <div className="col">
             <div className="card">
               {this.state.motorcycles.map((motorcycle) => (
-                <MotorCycleCard {...motorcycle.fields} />
+                <Motorcycle {...motorcycle.fields} />
               ))}
             </div>
           </div>
@@ -36,26 +37,4 @@ class App extends Component {
 
 export default App;
 
-const MotorCycleCard = ({
-  make,
-  model,
-  year,
-  description,
-  imageURL,
-  features,
-}) => (
-  <div className="card">
-    <img
-      className="card-img-top"
-      src={imageURL[0].url}
-      alt="Motorcycle poster"
-    />
-    <div className="card-body">
-      <h5 className="card-title">{make}</h5>
-      <h5 className="card-title">{model}</h5>
-      <p className="card-text">{description}</p>
-      <p className="card-text">{features}</p>
-      <small className="text-muted">{year}</small>
-    </div>
-  </div>
-);
+
