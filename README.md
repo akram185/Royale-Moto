@@ -62,7 +62,9 @@ Royale Moto is an app which consists collection of the best motorcycles. User wi
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+https://wireframe.cc/nwSoPA
+
+
 
 ### MVP/PostMVP
 
