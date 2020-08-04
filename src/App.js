@@ -1,46 +1,32 @@
 import React, { Component } from "react";
+import { Route, Link } from "react-router-dom";
+
 import axios from "axios";
 import Motorcycle from "./Motorcycle";
 import CreateMotorcycle from "./CreateMotorcycle";
+import Favorites from "./Favorites"
+import Home from "./Home";
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      motorcycles: [],
-    };
-  }
-  async componentDidMount() {
-    this.getMotorcycles()
-  }
-  getMotorcycles = async () => {
-    const data = await axios(
-      "https://api.airtable.com/v0/appBcQntEGzgoK1Ad/favorites?api_key=keyzDeexKzGh6V5pz"
-    );
-
-    this.setState({
-      motorcycles: data.data.records,
-    });
-  }
-  render() {
-    return (
-      <>
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              
-                {this.state.motorcycles.map((motorcycle) => (
-                  <Motorcycle {...motorcycle.fields} />
-                ))}
-              </div>
-            
-          </div>
-        </div>
-        <CreateMotorcycle getMotorcycles = {this.getMotorcycles} />
-        
-      </>
-    );
-  }
+function App() {
+  return (
+    <>
+      <nav>
+        <Link to="/">Royale Moto   </Link>
+        <Link to="/">Home   </Link>
+        <Link to="/collection">Add to our collection   </Link>
+        <Link to="/favorites">Favorites</Link>
+      </nav>
+      <Route path="/" exact>
+        <Home />
+      </Route>
+      <Route path="/collection" exact>
+      <CreateMotorcycle/>
+      </Route>
+      <Route path="/favorites" exact>
+      <Favorites />
+      </Route>
+    </>
+  );
 }
 
 export default App;
