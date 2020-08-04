@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-function CreateMotorcycle() {
+function CreateMotorcycle(props) {
   const [make, updateMake] = useState("");
   const [model, updateModel] = useState("");
   const [year, updateYear] = useState("");
@@ -37,7 +37,7 @@ function CreateMotorcycle() {
     updateImageURL("");
     updateDescription("");
     updateFeatures("");
-    //props.getMotorcycles();
+    // props.getMotorcycles();
   };
 
   return (

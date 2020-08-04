@@ -7,15 +7,16 @@ import CreateMotorcycle from "./CreateMotorcycle";
 import Favorites from "./Favorites";
 import Home from "./Home";
 import Information from "./Information";
+import "./App.css";
 
 function App() {
   return (
     <>
       <nav>
-        <Link to="/">Royale Moto </Link>
-        <Link to="/">Home </Link>
-        <Link to="/collection">Add to our collection </Link>
-        <Link to="/favorites">Favorites</Link>
+        <Link className="royale" to="/">Royale Moto </Link>
+        <Link className="home" to="/">Home </Link>
+        <Link className="collection" to="/collection">Add to our collection </Link>
+        <Link className="favorites" to="/favorites">Favorites</Link>
       </nav>
       <Route path="/" exact>
         <Home />
