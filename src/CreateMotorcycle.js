@@ -42,7 +42,7 @@ function CreateMotorcycle(props) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>New Motorcycle</h2>
+      <h2>Add Motorcycle</h2>
       <label htmlFor="make">Make</label>
       <input
         type="text"
@@ -86,7 +86,7 @@ function CreateMotorcycle(props) {
         value={features}
       />
 
-      <input type="submit" value="Create Motorcycle" />
+      <input className="button" type="submit" value="Create Motorcycle" />
     </form>
   );
 }

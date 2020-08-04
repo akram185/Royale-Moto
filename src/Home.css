@@ -1,5 +1,5 @@
 body {
-  background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
+  background: radial-gradient(#e5e5e5, rgb(150, 109, 109), #e5e5e5);
 }
 nav{
   text-align: center;
@@ -14,9 +14,9 @@ nav a {
   font-size: 20px;
 
 }
-nav a:visited {
+/* nav a:visited {
   color: blue;
-}
+} */
 .royale{
   margin-right: 100%;
   font-size: xx-large;
@@ -48,7 +48,7 @@ nav a:visited {
 }
 
 .card:hover {
-  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+  box-shadow: 5px 10px 20px 20px rgba(0, 0, 0, 0.253) !important;
 }
 
 /* .card-body{
@@ -65,15 +65,21 @@ nav a:visited {
 }
 
 form {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 10px auto;
   padding: 10px;
-  border: 1px solid blue;
+  border: 3px solid #ccd9ff;
+  /* border: 1px solid blue; */
   width: fit-content;
   box-sizing: border-box;
+}
+
+.button {
+  margin-top: 2rem;
 }
 
 /* .row{
