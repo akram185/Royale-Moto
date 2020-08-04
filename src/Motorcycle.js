@@ -12,7 +12,7 @@ const Motorcycle = ({
   <div className="card">
     <img
       className="card-img-top"
-      src={imageURL[0].url}
+      src={imageURL}
       alt="Motorcycle poster"
     />
     <div className="card-body">
