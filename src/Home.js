@@ -30,7 +30,7 @@ class Home extends Component {
           <div className="row">
             <div className="col">
               {this.state.motorcycles.map((motorcycle) => (
-                <Motorcycle {...motorcycle.fields} />
+                <Motorcycle id={motorcycle.id}{...motorcycle.fields} />
               ))}
             </div>
           </div>

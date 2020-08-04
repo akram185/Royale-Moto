@@ -27,7 +27,7 @@ function App() {
       <Route path="/favorites" exact>
         <Favorites />
       </Route>
-      <Route path="/information/:imageURL">
+      <Route path="/information/:id">
         <Information />
       </Route>
     </>

@@ -6,11 +6,11 @@ import axios from "axios";
 function Information() {
   const params = useParams();
   const [data, updateData] = useState({});
-
+console.log(params);
   useEffect(() => {
     const apiCall = async () => {
       const data = await axios(
-        `https://api.airtable.com/v0/appBcQntEGzgoK1Ad/favorites/${params.fields}`,
+        `https://api.airtable.com/v0/appBcQntEGzgoK1Ad/favorites/${params.id}`,
         {
           headers: {
             Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
@@ -21,7 +21,7 @@ function Information() {
       updateData(data.data);
     };
     apiCall();
-  }, [params.fields]);
+  }, []);
   if (data.fields) {
     return (
       <div className="card">
