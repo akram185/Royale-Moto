@@ -92,8 +92,8 @@ https://wireframe.cc/jxRTUt
 |---|---| ---|
 |August 01-02| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |August 03| Project Approval | Complete
-|August 04| Core Application Structure (6 react components) | Incomplete
-|August 05| Consume the data and render it on components| Incomplete
+|August 04| Core Application Structure (6 react components) | Complete
+|August 05| Consume the data and render it on components| Complete
 |August 06| MVP and Post MVP  | Incomplete
 |August 07| Presentations | Incomplete
 
@@ -105,15 +105,15 @@ https://github.com/akram185/Royale-Moto/blob/master/React_Priority_Matrix.png
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Creating Components  | H | 4hrs| 0hrs | 0hrs |
+| Creating Components  | H | 4hrs| 4hrs | 4hrs |
 | Implementing CSS | H | 6hrs| 0hrs | 0hrs |
-|Consuming data from airtable | H | 4hrs| 0hrs | 0hrs |
+|Consuming data from airtable | H | 4hrs| 4hrs | 4hrs |
 | Rendering data on each component | H | 6hrs| 0hrs | 0hrs |
 | Styling data| H | 6hrs| 0hrs | 0hrs |
 | Check components structure  | H | 3hrs| 0hrs | 0hrs |
 | Overall project debugging  | H | 3hrs| 0hrs | 0hrs |
 | CSS for Media Query  | M | 3hrs| 0hrs | 0hrs |
-| Total | H | 33hrs| 0hrs | 0hrs |
+| Total | H | 33hrs| 8hrs | 8hrs |
 
 
 ## Code Snippet
