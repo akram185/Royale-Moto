@@ -6,6 +6,7 @@ import Motorcycle from "./Motorcycle";
 import CreateMotorcycle from "./CreateMotorcycle";
 import Favorites from "./Favorites"
 import Home from "./Home";
+import Information from "./Information";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
       </Route>
       <Route path="/favorites" exact>
       <Favorites />
+      </Route>
+      <Route path="/information/:imageURL">
+        <Information />
       </Route>
     </>
   );

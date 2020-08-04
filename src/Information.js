@@ -3,35 +3,36 @@ import { useParams } from "react-router-dom";
 
 import axios from "axios";
 
+
 function Information() {
-  const { id } = useParams();
-  const [information, updateInformation] = useState({});
+  const  params = useParams();
+  const [data, updateData] = useState({});
 
   useEffect(() => {
     const apiCall = async () => {
-      const information = await axios(
-        `https://api.airtable.com/v0/appBcQntEGzgoK1Ad/favorites/${id}`,
+      const data = await axios(
+        `https://api.airtable.com/v0/appBcQntEGzgoK1Ad/favorites/${params.fields}`,
         {
           headers: {
             Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
           },
         }
       );
-      console.log(data.data.records);
-      updateInformation(information.data);
+      // console.log(data.data.records);
+      updateData(data.data);
     };
     apiCall();
-  }, [id]);
-  if (information.fields) {
+  }, [params.fields]);
+  if (data.fields) {
     return (
       <div className="card">
-        <img className="card-img-top" src={motorcycle.fields.imageURL} alt="Motorcycle poster" />
+        <img className="card-img-top" src={data.fields.imageURL} alt="Motorcycle poster" />
         <div className="card-body">
-          <h5 className="card-title">{motorcycle.fields.make}</h5>
-          <h5 className="card-title">{motorcycle.fields.model}</h5>
-          <p className="card-text">{motorcycle.fields.description}</p>
-          <p className="card-text">{motorcycle.fields.features}</p>
-          <small className="text-muted">{motorcycle.fields.year}</small>
+          <h5 className="card-title">{data.fields.make}</h5>
+          <h5 className="card-title">{data.fields.model}</h5>
+          <p className="card-text">{data.fields.description}</p>
+          <p className="card-text">{data.fields.features}</p>
+          <small className="text-muted">{data.fields.year}</small>
         </div>
       </div>
     );

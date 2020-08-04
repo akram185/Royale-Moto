@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Motorcycle from "./Motorcycle";
 import CreateMotorcycle from "./CreateMotorcycle";
+import "./Home.css";
 
 class Home extends Component {
   constructor() {
