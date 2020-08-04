@@ -3,9 +3,8 @@ import { useParams } from "react-router-dom";
 
 import axios from "axios";
 
-
 function Information() {
-  const  params = useParams();
+  const params = useParams();
   const [data, updateData] = useState({});
 
   useEffect(() => {
@@ -18,7 +17,7 @@ function Information() {
           },
         }
       );
-      // console.log(data.data.records);
+      console.log(data.data.records);
       updateData(data.data);
     };
     apiCall();
@@ -26,7 +25,11 @@ function Information() {
   if (data.fields) {
     return (
       <div className="card">
-        <img className="card-img-top" src={data.fields.imageURL} alt="Motorcycle poster" />
+        <img
+          className="card-img-top"
+          src={data.fields.imageURL}
+          alt="Motorcycle poster"
+        />
         <div className="card-body">
           <h5 className="card-title">{data.fields.make}</h5>
           <h5 className="card-title">{data.fields.model}</h5>

@@ -3,22 +3,26 @@ body {
 }
 .card {
   width: 20rem;
+  margin-top: 10%;
 }
 
 .card:hover {
-  box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253) !important;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
 }
 
 /* .card-body{
   padding: 3rem 0 !important;
 } */
 
-.container{
+.container {
   padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flexbox !important;
+  flex-wrap: wrap !important;
+  
 }
 
 /* .row{
   display: flexbox !important;
   display: inline !important;
 } */
-
