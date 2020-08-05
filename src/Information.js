@@ -17,14 +17,14 @@ console.log(params);
           },
         }
       );
-      console.log(data.data.records);
+      //console.log(data.data.records);
       updateData(data.data);
     };
     apiCall();
   }, []);
   if (data.fields) {
     return (
-      <div className="card">
+      <div className="info">
         <img
           className="card-img-top"
           src={data.fields.imageURL}
