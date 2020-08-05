@@ -6,7 +6,7 @@ import axios from "axios";
 function Information() {
   const params = useParams();
   const [data, updateData] = useState({});
-console.log(params);
+  console.log(params);
   useEffect(() => {
     const apiCall = async () => {
       const data = await axios(
@@ -25,17 +25,21 @@ console.log(params);
   if (data.fields) {
     return (
       <div className="info">
+        <div className="card-white-title">
+          <h1 className="card-title">{data.fields.make}</h1>
+          <h5 className="card-title">
+            {data.fields.model} {data.fields.year}
+          </h5>
+          <input className="favorites-btn" type="submit" value="Add to Favorites" />
+        </div>
         <img
           className="card-img-top"
           src={data.fields.imageURL}
           alt="Motorcycle poster"
         />
-        <div className="card-body">
-          <h5 className="card-title">{data.fields.make}</h5>
-          <h5 className="card-title">{data.fields.model}</h5>
+        <div className="card-white">
           <p className="card-text">{data.fields.description}</p>
           <p className="card-text">{data.fields.features}</p>
-          <small className="text-muted">{data.fields.year}</small>
         </div>
       </div>
     );

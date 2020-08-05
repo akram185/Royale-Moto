@@ -22,6 +22,16 @@
 .App-link {
   color: #61dafb;
 }
+/* img,
+h5,
+small {
+  width: 30rem;
+}
+.cards {
+  width: 1rem;
+  margin-top: 10%;
+  /* display: flexbox !important;
+  flex-wrap: wrap !important; */
 
 @keyframes App-logo-spin {
   from {

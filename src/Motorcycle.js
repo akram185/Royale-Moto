@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./App.css"
 
 const Motorcycle = ({ id, make, model, year, description, imageURL, features }) => (
   <div className="card">
