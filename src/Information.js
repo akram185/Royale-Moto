@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import axios from "axios";
+// import Favorites from "./Favorites";
 
 function Information() {
   const params = useParams();
@@ -30,7 +31,7 @@ function Information() {
           <h5 className="card-title">
             {data.fields.model} {data.fields.year}
           </h5>
-          <input className="favorites-btn" type="submit" value="Add to Favorites" />
+          <button className="favorites-btn" onClick= {() => ({})}>Add to Favorites</button>
         </div>
         <img
           className="card-img-top"

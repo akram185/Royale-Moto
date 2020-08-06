@@ -1,7 +1,7 @@
 body {
   background: radial-gradient(#e5e5e5, rgb(36, 35, 35), #e5e5e5);
 }
-nav{
+nav {
   text-align: center;
   /* border-radius: 25px; */
   /* border: 1px solid #2e3341; */
@@ -11,19 +11,17 @@ nav{
 nav a {
   margin: 5px 20px;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 20px;
-
 }
 /* nav a:visited {
   color: blue;
 } */
-.royale{
+.royale {
   margin-right: 100%;
   font-size: xx-large;
   color: #1c7a96;
-  
 }
 .home,
 .collection,
@@ -37,7 +35,6 @@ nav a {
 .card {
   width: 30rem;
   margin-top: 10%;
-  
 }
 
 .row {
@@ -84,13 +81,13 @@ form {
   background-color: #e5e5e5;
   color: rgb(0, 0, 0);
 }
-.button{
+.button {
   font-size: 24px;
   transition-duration: 0.4s;
   display: inline;
 }
 .button:hover {
-  background-color: #1c7a96; 
+  background-color: #1c7a96;
   color: white;
 }
 
@@ -109,28 +106,39 @@ form {
   margin-bottom: 2rem;
   box-shadow: 5px 10px 20px 2px rgb(255, 255, 255) !important;
   text-align: center;
-  
 }
 .card-white-title {
   color: #e5e5e5;
 }
-.favorites-btn{
+.favorites-btn {
   margin-bottom: 2rem;
   background-color: #62c7e6;
-  
 }
 .favorites-btn:hover {
   box-shadow: 2px 0px 10px 2px rgb(255, 255, 255);
 }
-/* .card{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  display: flex;
-  flex-direction: row !important;
-  justify-content: space-around;
-  margin: 0 20px;
-} */
-/* .row{
-  display: flexbox !important;
-  display: inline !important;
-} */
+
+@media (max-width: 375px) {
+  body {
+    background: white;
+  }
+  .card {
+    width: 10rem;
+    margin-top: 5%;
+  }
+  .royale {
+    margin-right: 100%;
+    font-size: 18px;
+    color: #1c7a96;
+  }
+
+  .home,
+  .collection,
+  .favorites {
+    color: #000000;
+    font-size: 13px;
+  }
+  nav {
+    box-shadow: 5px 0px 5px 3px rgba(0, 0, 0, 0.253) !important;
+  }
+}
