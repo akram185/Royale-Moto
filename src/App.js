@@ -4,7 +4,6 @@ import { Route } from "react-router-dom";
 import axios from "axios";
 import Motorcycle from "./Motorcycle";
 import CreateMotorcycle from "./CreateMotorcycle";
-// import Favorites from "./Favorites";
 import Home from "./Home";
 import Information from "./Information";
 import "./App.css";
@@ -25,9 +24,6 @@ function App() {
       </Route>
       <Route path="/collection" exact>
         <CreateMotorcycle />
-      </Route>
-      <Route path="/favorites" exact>
-        {/* <Favorites /> */}
       </Route>
       <Route path="/information/:id">
         <Information />

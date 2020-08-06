@@ -30,9 +30,6 @@ function Information() {
           <h5 className="card-title">
             {data.fields.model} {data.fields.year}
           </h5>
-          <button className="favorites-btn" onClick={() => ({})}>
-            Add to Favorites
-          </button>
         </div>
         <img
           className="card-img-top"
