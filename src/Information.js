@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import axios from "axios";
-// import Favorites from "./Favorites";
 
 function Information() {
   const params = useParams();
@@ -18,7 +17,7 @@ function Information() {
           },
         }
       );
-      //console.log(data.data.records);
+
       updateData(data.data);
     };
     apiCall();
@@ -31,7 +30,9 @@ function Information() {
           <h5 className="card-title">
             {data.fields.model} {data.fields.year}
           </h5>
-          <button className="favorites-btn" onClick= {() => ({})}>Add to Favorites</button>
+          <button className="favorites-btn" onClick={() => ({})}>
+            Add to Favorites
+          </button>
         </div>
         <img
           className="card-img-top"

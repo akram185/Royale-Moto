@@ -37,7 +37,6 @@ function CreateMotorcycle(props) {
     updateImageURL("");
     updateDescription("");
     updateFeatures("");
-    // props.getMotorcycles();
   };
 
   return (
