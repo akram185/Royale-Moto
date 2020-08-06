@@ -99,7 +99,7 @@ https://wireframe.cc/jxRTUt
 
 ## Priority Matrix
 
-https://github.com/akram185/Royale-Moto/blob/master/React_Priority_Matrix.png
+https://github.com/akram185/Royale-Moto/blob/master/img1.png
 
 ## Timeframes
 
