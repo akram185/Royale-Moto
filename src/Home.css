@@ -60,9 +60,7 @@ form {
   margin-left: 25%;
   margin-top: 5%;
   font-size: xx-large;
-
   border: 1px solid #2e3341;
-
   box-sizing: border-box;
   background-color: #e5e5e5;
   color: rgb(0, 0, 0);
@@ -98,7 +96,7 @@ form {
 }
 footer {
   background-color: white;
-  margin-left: 20% !important;
+  margin-left: 30% !important;
   margin-top: 10% !important;
   width: 600px;
 }

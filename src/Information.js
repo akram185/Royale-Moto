@@ -28,7 +28,7 @@ function Information() {
         <div className="card-white-title">
           <h1 className="card-title">{data.fields.make}</h1>
           <h5 className="card-title">
-            {data.fields.model} {data.fields.year}
+            {data.fields.model}, {data.fields.year}
           </h5>
         </div>
         <img
