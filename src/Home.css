@@ -39,7 +39,7 @@ nav a {
 }
 
 .card:hover {
-  box-shadow: 5px 10px 30px 20px rgba(250, 213, 91, 0.253);
+  box-shadow: 5px 10px 30px 20px rgba(255, 255, 255, 0.253);
 }
 
 .container {
