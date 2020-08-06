@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 import axios from "axios";
 import Motorcycle from "./Motorcycle";
@@ -8,16 +8,18 @@ import CreateMotorcycle from "./CreateMotorcycle";
 import Home from "./Home";
 import Information from "./Information";
 import "./App.css";
+import Nav from "./Nav";
+import track from "./track.jpg";
 
 function App() {
   return (
     <>
-      <nav>
-        <Link className="royale" to="/">Royale Moto </Link>
-        <Link className="home" to="/">Home </Link>
-        <Link className="collection" to="/collection">Add to our collection </Link>
-        <Link className="favorites" to="/favorites">Favorites</Link>
-      </nav>
+      <div
+        styles={{
+          backgroundImage: `URL(${track})`,
+        }}
+      ></div>
+      <Nav />
       <Route path="/" exact>
         <Home />
       </Route>
