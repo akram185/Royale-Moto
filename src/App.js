@@ -26,6 +26,14 @@ function App() {
       <Route path="/information/:id">
         <Information />
       </Route>
+      <footer>
+        <p>
+          © Developed by Waseem Mohammed, 2020 | Powered by{" "}
+          <a href="https://airtable.com/tblHhxL6KnP5ie5PC/viwqjI8MIMAF39TKd?blocks=hide">
+            Royale Moto's Airtable
+          </a>{" "}
+        </p>
+      </footer>
     </>
   );
 }

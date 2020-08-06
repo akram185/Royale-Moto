@@ -71,9 +71,9 @@ form {
   font-size: 24px;
   transition-duration: 0.4s;
   display: inline;
+  background-color: #1c7a96;
 }
 .button:hover {
-  background-color: #1c7a96;
   color: white;
 }
 
@@ -95,6 +95,12 @@ form {
 }
 .card-white-title {
   color: #e5e5e5;
+}
+footer {
+  background-color: white;
+  margin-left: 20% !important;
+  margin-top: 10% !important;
+  width: 600px;
 }
 
 @media (max-width: 500px) {
@@ -147,6 +153,13 @@ form {
     background-color: #1c7a96;
     color: white;
   }
+  footer {
+    background-color: white;
+    margin-left: 23%;
+    margin-top: 10%;
+    font-size: 5px;
+    width: 210px;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 1024px) {
@@ -196,6 +209,9 @@ form {
   .button {
     font-size: 2.5rem;
   }
+  footer {
+    margin-left: 28%;
+  }
 }
 
 @media (max-width: 320px) {
@@ -220,5 +236,8 @@ form {
   }
   form {
     margin-left: 30%;
+  }
+  footer {
+    margin-left: 28%;
   }
 }
