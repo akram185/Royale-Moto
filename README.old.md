@@ -116,11 +116,48 @@ https://github.com/akram185/Royale-Moto/blob/master/img1.png
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+I am proud of my code from my home component because I really wrote it very clean and I was able to implement it without any issues. Also, this code snippet is significant part of my app as it is getting the data from the airtable I created. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+class Home extends Component {
+  constructor() {
+    super();
+    this.state = {
+      motorcycles: [],
+    };
+  }
+  async componentDidMount() {
+    this.getMotorcycles();
+  }
+  getMotorcycles = async () => {
+    const data = await axios(
+      "https://api.airtable.com/v0/appBcQntEGzgoK1Ad/favorites",
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+        },
+      }
+    );
+
+    this.setState({
+      motorcycles: data.data.records,
+    });
+  };
+  render() {
+    return (
+      <>
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              {this.state.motorcycles.map((motorcycle) => (
+                <Motorcycle id={motorcycle.id} {...motorcycle.fields} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
 }
 ```
 
