@@ -4,7 +4,7 @@ Royale Moto
 
 ## Project Description
 
-Royale Moto is an app which consists collection of the best motorcycles. User will be presented with cards containing image and the name of the motorcycles Royale Moto has. User can select the motorcycle they like and will be redirected to the individual motorcycle page when clicked on the card. Each individual motorcycle page will have information about the selected motorcycle and features. There will also be a "Add to favorites" button on each page which will let the user add their favorite motorcycle to the favorites list. The cool feature of this app is that the user is not limited to the collection Royale Moto has, user can add motorcycles of their choice from additional dropdown list which includes more motorcycles not included in Royale Moto's collection.
+Royale Moto is an app which consists collection of the best motorcycles. User will be presented with cards containing image, make, model and year. User can select the motorcycle they like by clicking on the card and will be redirected to the individual motorcycle page. Each individual motorcycle page will have information about the selected motorcycle and features. The cool feature of this app is that the user is not limited to the Royale Moto's collection, user can add motorcycles of their choice with the "Add to our collection" tab provided on the page. Once user fills the form with appropriate information a new card will be shown in Royale's collection.
 
 ## Data Sample
 
@@ -76,9 +76,7 @@ https://wireframe.cc/jxRTUt
 - Allow user to add selected motorcyle to the favorites
 - Make individual page for each motorcycle
 - Include optios for user to add motorcycle to the Home page
-- Have Home, Favorites, Motorcycle, App, Add Motorcycles, Delete Favorites components
-- Page responsive design will support mobile, desktop and tablet layouts
-- Use flexbox to display rendered data
+- Have Home, Motorcycle, App, create motorcycle, nav and information components
 
 #### PostMVP  
 
@@ -94,7 +92,7 @@ https://wireframe.cc/jxRTUt
 |August 03| Project Approval | Complete
 |August 04| Core Application Structure (6 react components) | Complete
 |August 05| Consume the data and render it on components| Complete
-|August 06| MVP and Post MVP  | Incomplete
+|August 06| MVP | Complete
 |August 07| Presentations | Incomplete
 
 ## Priority Matrix
@@ -106,14 +104,14 @@ https://github.com/akram185/Royale-Moto/blob/master/img1.png
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Creating Components  | H | 4hrs| 4hrs | 4hrs |
-| Implementing CSS | H | 6hrs| 0hrs | 0hrs |
+| Implementing CSS | H | 6hrs| 8hrs | 8hrs |
 |Consuming data from airtable | H | 4hrs| 4hrs | 4hrs |
-| Rendering data on each component | H | 6hrs| 0hrs | 0hrs |
-| Styling data| H | 6hrs| 0hrs | 0hrs |
-| Check components structure  | H | 3hrs| 0hrs | 0hrs |
-| Overall project debugging  | H | 3hrs| 0hrs | 0hrs |
-| CSS for Media Query  | M | 3hrs| 0hrs | 0hrs |
-| Total | H | 33hrs| 8hrs | 8hrs |
+| Rendering data on each component | H | 6hrs| 8hrs | 8hrs |
+| Styling data| H | 6hrs| 8hrs | 8hrs |
+| Check components structure  | H | 3hrs| 3hrs | 3hrs |
+| Overall project debugging  | H | 3hrs| 2hrs | 2hrs |
+| CSS for Media Query  | M | 3hrs| 6hrs | 6hrs |
+| Total | H | 33hrs| 41hrs | 41hrs |
 
 
 ## Code Snippet
@@ -127,4 +125,4 @@ function reverse(string) {
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ My initial idea was to make a motorcycle dealer app which lets the user get a quote and all purchase information. It would have been similar to shopping website but I realized it would not be possibly finished within the timeframe given and in this app I wanted to have a favorites component which stores the motorcycles user likes by providing the user with "Add to favorites" button. That is something I would work on in future.

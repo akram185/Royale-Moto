@@ -16,7 +16,12 @@ class Home extends Component {
   }
   getMotorcycles = async () => {
     const data = await axios(
-      "https://api.airtable.com/v0/appBcQntEGzgoK1Ad/favorites?api_key=keyzDeexKzGh6V5pz"
+      "https://api.airtable.com/v0/appBcQntEGzgoK1Ad/favorites",
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+        },
+      }
     );
 
     this.setState({
