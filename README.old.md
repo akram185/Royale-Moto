@@ -111,7 +111,7 @@ https://github.com/akram185/Royale-Moto/blob/master/img1.png
 | Check components structure  | H | 3hrs| 3hrs | 3hrs |
 | Overall project debugging  | H | 3hrs| 2hrs | 2hrs |
 | CSS for Media Query  | M | 3hrs| 6hrs | 6hrs |
-| Total | H | 33hrs| 41hrs | 41hrs |
+| Total | H | 35hrs| 43hrs | 43hrs |
 
 
 ## Code Snippet
