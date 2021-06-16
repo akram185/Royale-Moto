@@ -1,10 +1,9 @@
-
 {
-  "datadog" : "browser-rum",
   "name": "royale-moto",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@datadog/browser-rum": "^2.14.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -20,6 +19,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "datadog": "browser-rum",
     "start": "react-scripts start",
     "build": "CI= react-scripts build",
     "test": "react-scripts test",
