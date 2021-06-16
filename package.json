@@ -1,4 +1,6 @@
+
 {
+  "datadog" : "browser-rum",
   "name": "royale-moto",
   "version": "0.1.0",
   "private": true,

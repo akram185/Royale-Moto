@@ -8,18 +8,20 @@ import "./App.css";
 import Nav from "./Nav";
 import track from "./track.jpg";
 
-import { DdSdkReactNative, DdSdkReactNativeConfiguration } from 'dd-sdk-reactnative';
+import { datadogRum } from '@datadog/browser-rum';
 
-const config = new DdSdkReactNativeConfiguration(
-    "pubcd2a5324e8caa431c5cfe5190ed50c5d", 
-    "<netlify>", 
-    "ef070bfe-86b5-4df4-a3a2-25eb4201510a",
-    true, // track User interactions (e.g.: Tap on buttons)
-    true, // track XHR Resources
-    true // track Errors
-)
+datadogRum.init({
+    applicationId: 'ef070bfe-86b5-4df4-a3a2-25eb4201510a',
+    clientToken: 'pubcd2a5324e8caa431c5cfe5190ed50c5d',
+    site: 'datadoghq.com',
+    service:'royalemoto',
+    env:'netlify',
+    // Specify a version number to identify the deployed version of your application in Datadog 
+    // version: '1.0.0',
+    sampleRate: 100,
+    trackInteractions: true
+});
 
-DdSdkReactNative.initialize(config)
 
 // const tracer = require('dd-trace').init()
 
