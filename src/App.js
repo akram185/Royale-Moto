@@ -15,13 +15,12 @@ datadogRum.init({
     clientToken: 'pubcd2a5324e8caa431c5cfe5190ed50c5d',
     site: 'datadoghq.com',
     service:'royalemoto',
-    env:'netlify',
+    env:'production',
     // Specify a version number to identify the deployed version of your application in Datadog 
     // version: '1.0.0',
     sampleRate: 100,
     trackInteractions: true
 });
-
 
 // const tracer = require('dd-trace').init()
 
