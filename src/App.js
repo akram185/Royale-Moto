@@ -12,7 +12,7 @@ import { DdSdkReactNative, DdSdkReactNativeConfiguration } from 'dd-sdk-reactnat
 
 const config = new DdSdkReactNativeConfiguration(
     "pubcd2a5324e8caa431c5cfe5190ed50c5d", 
-    "<ENVIRONMENT_NAME>", 
+    "<netlify>", 
     "ef070bfe-86b5-4df4-a3a2-25eb4201510a",
     true, // track User interactions (e.g.: Tap on buttons)
     true, // track XHR Resources
