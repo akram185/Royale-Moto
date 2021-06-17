@@ -23,7 +23,6 @@
   },
   "scripts": {
     "datadog": "browser-rum",
-    "dd-trace": "tracer",
     "start": "react-scripts start",
     "build": "CI= react-scripts build",
     "test": "react-scripts test",

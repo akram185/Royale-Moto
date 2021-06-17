@@ -1,6 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import { tracer } from "dd-trace";
+import  tracer  from "dd-trace";
 
 
 import CreateMotorcycle from "./CreateMotorcycle";
@@ -24,10 +24,10 @@ datadogRum.init({
     trackInteractions: true
 });
 
- tracer = require('dd-trace').init();
+//  tracer = require('dd-trace').init();
 
-// const tracer = require('dd-trace').init()
-//  const span = tracer.scope().active()
+const tracer = require('dd-trace').init()
+const span = tracer.scope().active(span)
   
 
 function App() {
