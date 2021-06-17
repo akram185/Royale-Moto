@@ -1,5 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
+import { tracer } from "dd-trace";
+
 
 import CreateMotorcycle from "./CreateMotorcycle";
 import Home from "./Home";
@@ -22,7 +24,13 @@ datadogRum.init({
     trackInteractions: true
 });
 
+const tracer = require('dd-trace').init({
+  logInjection: true
+});
+
 // const tracer = require('dd-trace').init()
+//  const span = tracer.scope().active()
+  
 
 function App() {
   return (
