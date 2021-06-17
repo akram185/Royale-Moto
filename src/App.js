@@ -24,9 +24,7 @@ datadogRum.init({
     trackInteractions: true
 });
 
-const tracer = require('dd-trace').init({
-  logInjection: true
-});
+const tracer = require('dd-trace').init();
 
 // const tracer = require('dd-trace').init()
 //  const span = tracer.scope().active()
