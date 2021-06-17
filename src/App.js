@@ -1,6 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import  tracer  from "dd-trace";
+// import  tracer  from "dd-trace";
 
 
 import CreateMotorcycle from "./CreateMotorcycle";
@@ -26,8 +26,15 @@ datadogRum.init({
 
 //  tracer = require('dd-trace').init();
 
-const tracer = require('dd-trace').init()
-const span = tracer.scope().active(span)
+import { tracer } from "dd-trace";
+
+tracer.init({
+  DD_ENV: 'production',
+  DD_LOGS_INJECTION: true
+});
+
+//const tracer = require('dd-trace').init()
+//  const span = tracer.scope().active()
   
 
 function App() {
